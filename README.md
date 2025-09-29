@@ -61,3 +61,6 @@ npx cap open android
 - `website/` - Landing page website
 - `android/` - Android project files
 - `sounds/` - Audio files for sound effects
+
+## Latest Updates
+- Privacy policy updated with correct developer information
