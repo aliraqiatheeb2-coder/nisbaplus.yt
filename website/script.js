@@ -1,5 +1,78 @@
 // JavaScript for Nisba+ Website
 
+// Language translations
+const translations = {
+    ar: {
+        // Navigation
+        'Features': 'الميزات',
+        'Screenshots': 'لقطات الشاشة',
+        'Download': 'تحميل',
+        
+        // Hero Section
+        'Your Journey to a': 'رحلتك إلى',
+        'Better Life': 'حياة أفضل',
+        'Starts Here': 'تبدأ من هنا',
+        'Transform your daily routine with powerful habit tracking, smart task management, and focus-enhancing Pomodoro technique. Experience productivity like never before with beautiful animations and motivating sound effects.': 'حول روتينك اليومي مع تتبع العادات القوي وإدارة المهام الذكية وتقنية بومودورو لتعزيز التركيز. جرب الإنتاجية كما لم تكن من قبل مع الرسوم المتحركة الجميلة والتأثيرات الصوتية المحفزة.',
+        'Download Now': 'تحميل الآن',
+        'Live Demo': 'عرض تجريبي',
+        'Good Evening': 'مساء الخير',
+        'Daily Exercise': 'التمرين اليومي',
+        'Read Book': 'قراءة كتاب',
+        'Pomodoro Session': 'جلسة بومودورو',
+        
+        // Features Section
+        'Powerful Features': 'ميزات قوية',
+        'Everything you need to build better habits, manage tasks efficiently, and stay focused on your goals.': 'كل ما تحتاجه لبناء عادات أفضل وإدارة المهام بكفاءة والبقاء مركزًا على أهدافك.',
+        'Smart Task Management': 'إدارة المهام الذكية',
+        'Organize your tasks with intelligent categorization, priority levels, and due dates. Never miss an important deadline again.': 'نظم مهامك مع تصنيف ذكي ومستويات أولوية وتواريخ استحقاق. لا تفوت موعدًا نهائيًا مهمًا.',
+        'Habit Tracking': 'تتبع العادات',
+        'Build positive habits with streak tracking, progress visualization, and gentle reminders that keep you motivated.': 'ابنِ عادات إيجابية مع تتبع السلسلة وتصور التقدم وتذكيرات لطيفة تبقيك متحفزًا.',
+        'Focus Pomodoro': 'بومودورو للتركيز',
+        'Boost productivity with the proven Pomodoro technique. Work in focused intervals with customizable timers and breaks.': 'عزز الإنتاجية مع تقنية بومودورو المثبتة. اعمل في فترات مركز مع مؤقتات وفترات راحة قابلة للتخصيص.',
+        'Progress Analytics': 'تحليلات التقدم',
+        'Visualize your productivity with detailed statistics, charts, and insights that help you understand your patterns.': 'صور إنتاجيتك مع إحصائيات مفصلة ومخططات ورؤى تساعدك على فهم أنماطك.',
+        'Gentle Motivation': 'تحفيز لطيف',
+        'Stay motivated with beautiful animations, encouraging sound effects, and positive reinforcement for your achievements.': 'ابقَ متحفزًا مع رسوم متحركة جميلة وتأثيرات صوتية محفزة وتعزيز إيجابي لإنجازاتك.',
+        'Privacy Focused': 'الخصوصية في المقدمة',
+        'Your data stays private and secure. No ads, no tracking, no data selling. Just pure productivity tools.': 'تبقى بياناتك خاصة وآمنة. لا إعلانات، لا تتبع، لا بيع للبيانات. مجرد أدوات إنتاجية نقية.',
+        
+        // Stats Section
+        'Active Users': 'مستخدمين نشطين',
+        'Tasks Completed': 'مهمة مكتملة',
+        'Habits Tracked': 'عادة متتبعة',
+        'Uptime': 'وقت التشغيل',
+        
+        // Screenshots Section
+        'Beautiful Interface': 'واجهة جميلة',
+        'Experience a clean, modern design that makes productivity enjoyable and engaging.': 'جرب تصميمًا نظيفًا وحديثًا يجعل الإنتاجية ممتعة وجذابة.',
+        'Task Management': 'إدارة المهام',
+        'Progress Tracking': 'تتبع التقدم',
+        'Pomodoro Timer': 'مؤقت بومودورو',
+        
+        // Download Section
+        'Get Started Today': 'ابدأ اليوم',
+        'Join thousands of users who have transformed their productivity with Nisba+.': 'انضم إلى آلاف المستخدمين الذين حولوا إنتاجيتهم مع Nisba+.',
+        'Download for Android': 'تحميل للأندرويد',
+        'iOS - Coming Soon': 'iOS - قريباً',
+        'Web - Coming Soon': 'الويب - قريباً',
+        'Available for free on all platforms. No ads. No subscriptions.': 'متاح مجانًا على جميع المنصات. لا إعلانات. لا اشتراكات.',
+        
+        // Footer
+        'Product': 'المنتج',
+        'Pricing': 'التسعير',
+        'Roadmap': 'خريطة الطريق',
+        'Support': 'الدعم',
+        'Help Center': 'مركز المساعدة',
+        'Contact Us': 'اتصل بنا',
+        'Privacy Policy': 'سياسة الخصوصية',
+        'Terms of Service': 'شروط الخدمة',
+        'All rights reserved. Made with ❤️ for productivity enthusiasts.': 'جميع الحقوق محفوظة. صُنع بـ ❤️ لمحبي الإنتاجية.',
+        
+        // Other
+        'Nisba+': 'نسبا+'
+    }
+};
+
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Navigation Toggle
     const mobileMenuButton = document.querySelector('.md\\:hidden');
@@ -20,6 +93,53 @@ document.addEventListener('DOMContentLoaded', function() {
                 navLinks.classList.toggle('glass-effect');
             }
         });
+    }
+    
+    // Language Toggle
+    const languageToggle = document.getElementById('language-toggle');
+    const langEn = document.querySelector('.lang-en');
+    const langAr = document.querySelector('.lang-ar');
+    
+    if (languageToggle) {
+        languageToggle.addEventListener('click', function() {
+            // Toggle language display
+            langEn.classList.toggle('hidden');
+            langAr.classList.toggle('hidden');
+            
+            // Get current language
+            const currentLang = langEn.classList.contains('hidden') ? 'ar' : 'en';
+            
+            // Update all translatable elements
+            updateLanguage(currentLang);
+        });
+    }
+    
+    // Function to update language
+    function updateLanguage(lang) {
+        if (lang === 'ar') {
+            // Apply Arabic translations
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (translations.ar[key]) {
+                    element.textContent = translations.ar[key];
+                }
+            });
+            
+            // Update HTML direction
+            document.documentElement.setAttribute('dir', 'rtl');
+            document.documentElement.setAttribute('lang', 'ar');
+        } else {
+            // Apply English (default)
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                // Reset to original content (you might want to store original content differently)
+                element.textContent = element.getAttribute('data-original') || element.textContent;
+            });
+            
+            // Update HTML direction
+            document.documentElement.setAttribute('dir', 'ltr');
+            document.documentElement.setAttribute('lang', 'en');
+        }
     }
     
     // Smooth Scrolling for Navigation Links
