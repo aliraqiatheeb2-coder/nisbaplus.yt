@@ -1,0 +1,52 @@
+<svg width="1024" height="500" viewBox="0 0 1024 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1024" height="500" fill="url(#bgGradient)" />
+  
+  <!-- Glass Card -->
+  <g transform="translate(100, 50)">
+    <rect x="0" y="0" width="824" height="400" rx="30" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <rect x="0" y="0" width="824" height="400" rx="30" fill="rgba(255,255,255,0.1)" filter="blur(10px)" />
+  </g>
+  
+  <!-- Feature Icon -->
+  <circle cx="300" cy="250" r="80" fill="rgba(255,255,255,0.2)" />
+  <circle cx="300" cy="250" r="60" fill="rgba(255,255,255,0.3)" />
+  <text x="300" y="270" font-family="Arial, sans-serif" font-size="60" text-anchor="middle" fill="white" font-weight="bold">🎯</text>
+  
+  <!-- Feature Title -->
+  <text x="550" y="180" font-family="Arial, sans-serif" font-size="42" text-anchor="middle" fill="white" font-weight="bold">
+    Habit Tracking
+  </text>
+  
+  <!-- Feature Description -->
+  <text x="550" y="240" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="rgba(255,255,255,0.9)">
+    Build positive habits with streak tracking
+  </text>
+  <text x="550" y="280" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="rgba(255,255,255,0.9)">
+    and progress visualization
+  </text>
+  
+  <!-- Stats -->
+  <g transform="translate(450, 320)">
+    <rect x="0" y="0" width="200" height="60" rx="15" fill="rgba(255,255,255,0.1)" />
+    <text x="100" y="38" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="white">7 Days Streak</text>
+  </g>
+  
+  <!-- Progress Bar -->
+  <g transform="translate(450, 300)">
+    <rect x="0" y="0" width="200" height="10" rx="5" fill="rgba(255,255,255,0.2)" />
+    <rect x="0" y="0" width="140" height="10" rx="5" fill="#4ade80" />
+  </g>
+</svg>

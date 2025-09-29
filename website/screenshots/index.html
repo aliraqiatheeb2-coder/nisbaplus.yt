@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisba+ App Screenshots</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #111827;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(1024px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .screenshot {
+            width: 1024px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .screenshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .feature-graphic {
+            border: 3px solid #8b5cf6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nisba+ App Features</h1>
+    <div class="gallery">
+        <div class="screenshot feature-graphic">
+            <img src="feature-graphic.png" alt="Nisba+ Feature Graphic">
+        </div>
+        <div class="screenshot">
+            <img src="feature-1-habit-tracking.png" alt="Habit Tracking Feature">
+        </div>
+        <div class="screenshot">
+            <img src="feature-2-task-management.png" alt="Task Management Feature">
+        </div>
+        <div class="screenshot">
+            <img src="feature-3-pomodoro-focus.png" alt="Pomodoro Focus Feature">
+        </div>
+        <div class="screenshot">
+            <img src="feature-4-analytics.png" alt="Progress Analytics Feature">
+        </div>
+    </div>
+</body>
+</html>

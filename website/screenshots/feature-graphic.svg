@@ -1,0 +1,79 @@
+<svg width="1024" height="500" viewBox="0 0 1024 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1024" height="500" fill="url(#bgGradient)" />
+  
+  <!-- App Title -->
+  <text x="512" y="80" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="white" font-weight="bold">
+    Nisba+ Productivity App
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="512" y="120" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="rgba(255,255,255,0.9)">
+    Transform your daily routine with powerful productivity tools
+  </text>
+  
+  <!-- Feature Cards -->
+  <!-- Habit Tracking -->
+  <g transform="translate(100, 170)">
+    <rect x="0" y="0" width="200" height="250" rx="20" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <circle cx="100" cy="70" r="40" fill="rgba(255,255,255,0.2)" />
+    <text x="100" y="85" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="white">🎯</text>
+    <text x="100" y="140" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white" font-weight="bold">Habit Tracking</text>
+    <text x="100" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="rgba(255,255,255,0.8)">Build positive habits</text>
+    <text x="100" y="190" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="rgba(255,255,255,0.8)">with streak tracking</text>
+  </g>
+  
+  <!-- Task Management -->
+  <g transform="translate(320, 170)">
+    <rect x="0" y="0" width="200" height="250" rx="20" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <circle cx="100" cy="70" r="40" fill="rgba(255,255,255,0.2)" />
+    <text x="100" y="85" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="white">📋</text>
+    <text x="100" y="140" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white" font-weight="bold">Task Management</text>
+    <text x="100" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="rgba(255,255,255,0.8)">Organize tasks with</text>
+    <text x="100" y="190" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="rgba(255,255,255,0.8)">smart prioritization</text>
+  </g>
+  
+  <!-- Pomodoro Focus -->
+  <g transform="translate(540, 170)">
+    <rect x="0" y="0" width="200" height="250" rx="20" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <circle cx="100" cy="70" r="40" fill="rgba(255,255,255,0.2)" />
+    <text x="100" y="85" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="white">⏱️</text>
+    <text x="100" y="140" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white" font-weight="bold">Pomodoro Focus</text>
+    <text x="100" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="rgba(255,255,255,0.8)">Boost productivity</text>
+    <text x="100" y="190" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="rgba(255,255,255,0.8)">with focus sessions</text>
+  </g>
+  
+  <!-- Analytics -->
+  <g transform="translate(760, 170)">
+    <rect x="0" y="0" width="200" height="250" rx="20" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <circle cx="100" cy="70" r="40" fill="rgba(255,255,255,0.2)" />
+    <text x="100" y="85" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="white">📊</text>
+    <text x="100" y="140" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white" font-weight="bold">Progress Analytics</text>
+    <text x="100" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="rgba(255,255,255,0.8)">Visualize your</text>
+    <text x="100" y="190" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="rgba(255,255,255,0.8)">productivity insights</text>
+  </g>
+  
+  <!-- App Icon Mockup -->
+  <g transform="translate(462, 380)">
+    <rect x="0" y="0" width="100" height="100" rx="20" fill="rgba(255,255,255,0.1)" />
+    <circle cx="50" cy="50" r="30" fill="url(#bgGradient)" />
+    <text x="50" y="65" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="white">⭐</text>
+  </g>
+  
+  <!-- Download Text -->
+  <text x="512" y="450" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="rgba(255,255,255,0.9)">
+    Available on Android - Transform Your Productivity Today
+  </text>
+</svg>

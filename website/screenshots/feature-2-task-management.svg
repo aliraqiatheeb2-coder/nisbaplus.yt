@@ -1,0 +1,53 @@
+<svg width="1024" height="500" viewBox="0 0 1024 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1024" height="500" fill="url(#bgGradient)" />
+  
+  <!-- Glass Card -->
+  <g transform="translate(100, 50)">
+    <rect x="0" y="0" width="824" height="400" rx="30" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <rect x="0" y="0" width="824" height="400" rx="30" fill="rgba(255,255,255,0.1)" filter="blur(10px)" />
+  </g>
+  
+  <!-- Feature Icon -->
+  <circle cx="300" cy="250" r="80" fill="rgba(255,255,255,0.2)" />
+  <circle cx="300" cy="250" r="60" fill="rgba(255,255,255,0.3)" />
+  <text x="300" y="270" font-family="Arial, sans-serif" font-size="60" text-anchor="middle" fill="white" font-weight="bold">📋</text>
+  
+  <!-- Feature Title -->
+  <text x="550" y="180" font-family="Arial, sans-serif" font-size="42" text-anchor="middle" fill="white" font-weight="bold">
+    Task Management
+  </text>
+  
+  <!-- Feature Description -->
+  <text x="550" y="240" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="rgba(255,255,255,0.9)">
+    Organize tasks with intelligent categorization
+  </text>
+  <text x="550" y="280" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="rgba(255,255,255,0.9)">
+    and priority levels
+  </text>
+  
+  <!-- Task List -->
+  <g transform="translate(450, 320)">
+    <rect x="0" y="0" width="200" height="40" rx="10" fill="rgba(255,255,255,0.1)" />
+    <text x="20" y="27" font-family="Arial, sans-serif" font-size="18" fill="#4ade80">✓</text>
+    <text x="50" y="27" font-family="Arial, sans-serif" font-size="16" fill="white">Daily Exercise</text>
+  </g>
+  
+  <g transform="translate(450, 370)">
+    <rect x="0" y="0" width="200" height="40" rx="10" fill="rgba(255,255,255,0.1)" />
+    <text x="20" y="27" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.5)">○</text>
+    <text x="50" y="27" font-family="Arial, sans-serif" font-size="16" fill="white">Read Book</text>
+  </g>
+</svg>
